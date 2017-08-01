@@ -1,0 +1,65 @@
+/* sass var begin */
+@mixin bc($value:#ccc){
+	background-color: $value;
+}
+@mixin tr($value: 45deg){
+	transform:rotate($value);
+	-ms-transform:rotate($value);
+	-moz-transform:rotate($value);
+	-webkit-transform:rotate($value);
+	-o-transform:rotate($value);
+}
+@mixin wh($value: 0px){
+	height: $value;
+	width: $value;
+}
+@mixin cm(){
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%,-50%,0px);
+}
+@mixin br($value: 100%){
+	-moz-border-radius: $value;
+	-webkit-border-radius: $value;
+	border-radius: $value;
+}
+@mixin abc(){
+	content: "";
+	display: block;
+	position: absolute;
+}
+@mixin fus(){
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+@mixin heo(){
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+@mixin op($value: 0.6){
+	filter: Alpha(opacity=$value*100);
+	-moz-opacity:$value;
+	opacity:$value;
+}
+@mixin trans($value: 0.2s){
+	-webkit-transition: all $value;
+	-o-transition: all $value;
+	-moz-transition: all $value;
+	transition: all $value;
+}
+@mixin lg($value1: #ccc,$value2: #000){
+	background: -webkit-linear-gradient( left,$value1,$value2);
+	background: -moz-linear-gradient( left,$value1,$value2);
+	background: -o-linear-gradient( left,$value1,$value2);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=$value1, endColorstr=$value2);/*IE<9>*/
+}
+@mixin tlg($value1: #ccc,$value2: #000){
+	background: -webkit-linear-gradient( top,$value1,$value2);
+	background: -moz-linear-gradient( top,$value1,$value2);
+	background: -o-linear-gradient( top,$value1,$value2);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=$value1, endColorstr=$value2);/*IE<9>*/
+}
+/* sass var over */
