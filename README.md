@@ -4,5 +4,5 @@
 
 ## git clone https://github.com/suredjh/react-xiu.git
 
-## cd react-xiu 
+## cd react-xiu (this is a test)
 ## 执行anywhere
